@@ -16,6 +16,8 @@
 		AB8F896D2952F0B80079E6C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8F896B2952F0B80079E6C8 /* LaunchScreen.storyboard */; };
 		AC0448262954D8F40046FCB9 /* InboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0448252954D8F40046FCB9 /* InboxVC.swift */; };
 		AC0448282954E1040046FCB9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC0448272954E1030046FCB9 /* GoogleService-Info.plist */; };
+		AC04482A2955B1EB0046FCB9 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0448292955B1EB0046FCB9 /* RegisterVC.swift */; };
+		AC04482C2955C0E40046FCB9 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04482B2955C0E40046FCB9 /* SignInVC.swift */; };
 		E6E8F4E888D41DC553318786 /* Pods_ProjectAIRBNB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEB3D3A2B56ABA80FCC7D50 /* Pods_ProjectAIRBNB.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		AB8F896E2952F0B80079E6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC0448252954D8F40046FCB9 /* InboxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxVC.swift; sourceTree = "<group>"; };
 		AC0448272954E1030046FCB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC0448292955B1EB0046FCB9 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		AC04482B2955C0E40046FCB9 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		CFEB3D3A2B56ABA80FCC7D50 /* Pods_ProjectAIRBNB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectAIRBNB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F0D43D6A0E5C1590763A3D /* Pods-ProjectAIRBNB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectAIRBNB.debug.xcconfig"; path = "Target Support Files/Pods-ProjectAIRBNB/Pods-ProjectAIRBNB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +100,8 @@
 			children = (
 				AB8F89612952F0B70079E6C8 /* HomeVC.swift */,
 				AC0448252954D8F40046FCB9 /* InboxVC.swift */,
+				AC0448292955B1EB0046FCB9 /* RegisterVC.swift */,
+				AC04482B2955C0E40046FCB9 /* SignInVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,6 +233,8 @@
 				AC0448262954D8F40046FCB9 /* InboxVC.swift in Sources */,
 				AB8F89622952F0B70079E6C8 /* HomeVC.swift in Sources */,
 				AB8F895E2952F0B70079E6C8 /* AppDelegate.swift in Sources */,
+				AC04482A2955B1EB0046FCB9 /* RegisterVC.swift in Sources */,
+				AC04482C2955C0E40046FCB9 /* SignInVC.swift in Sources */,
 				AB8F89602952F0B70079E6C8 /* SceneDelegate.swift in Sources */,
 				AB8F89682952F0B70079E6C8 /* ProjectAIRBNB.xcdatamodeld in Sources */,
 			);

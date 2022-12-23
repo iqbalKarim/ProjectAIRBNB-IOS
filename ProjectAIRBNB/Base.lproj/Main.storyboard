@@ -28,23 +28,26 @@
         <!--View Controller-->
         <scene sceneID="sKp-89-WJ2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RDk-4Y-9KK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="FhM-1A-1Cu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bps-C7-QSC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87v-3p-Tjq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87v-3p-Tjq">
                                 <rect key="frame" x="153" y="504" width="87" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="iSl-9w-0oE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXx-v4-LSt">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXx-v4-LSt">
                                 <rect key="frame" x="49" y="450" width="294" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Kb7-Ok-Mgl"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In">
                                     <color key="baseForegroundColor" systemColor="systemPinkColor"/>
@@ -53,10 +56,12 @@
                                     <segue destination="7GD-sR-nG5" kind="show" id="43q-Qu-cek"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhq-fS-n1E">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhq-fS-n1E">
                                 <rect key="frame" x="49" y="583" width="294" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="7sJ-2s-JVF"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Register">
                                     <color key="baseForegroundColor" systemColor="systemPinkColor"/>
@@ -65,23 +70,45 @@
                                     <segue destination="83z-f9-Azp" kind="show" id="c1W-sk-iE5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to AirBNB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAT-Kd-jjG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to AirBNB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAT-Kd-jjG">
                                 <rect key="frame" x="49" y="239" width="294" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="0yz-v0-vmh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="airbnb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="y94-os-ZVb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="airbnb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="y94-os-ZVb">
                                 <rect key="frame" x="116" y="139" width="160" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="fRv-If-Z3h"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ixr-Zk-aMX"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="kXx-v4-LSt" firstAttribute="leading" secondItem="Rhq-fS-n1E" secondAttribute="leading" id="31T-ct-SFS"/>
+                            <constraint firstItem="87v-3p-Tjq" firstAttribute="top" secondItem="kXx-v4-LSt" secondAttribute="bottom" constant="8" id="Csh-CM-LCq"/>
+                            <constraint firstItem="87v-3p-Tjq" firstAttribute="leading" secondItem="Ixr-Zk-aMX" secondAttribute="leading" constant="153" id="IOI-NB-Lum"/>
+                            <constraint firstItem="y94-os-ZVb" firstAttribute="centerX" secondItem="Bps-C7-QSC" secondAttribute="centerX" id="IST-Ko-yn9"/>
+                            <constraint firstItem="VAT-Kd-jjG" firstAttribute="leading" secondItem="Ixr-Zk-aMX" secondAttribute="leading" constant="49" id="N2R-qc-dCa"/>
+                            <constraint firstItem="Rhq-fS-n1E" firstAttribute="top" secondItem="87v-3p-Tjq" secondAttribute="bottom" constant="8" id="PHq-cP-GQZ"/>
+                            <constraint firstItem="y94-os-ZVb" firstAttribute="centerX" secondItem="VAT-Kd-jjG" secondAttribute="centerX" id="TMW-8P-gyU"/>
+                            <constraint firstItem="VAT-Kd-jjG" firstAttribute="trailing" secondItem="kXx-v4-LSt" secondAttribute="trailing" id="WWc-tR-ftO"/>
+                            <constraint firstItem="kXx-v4-LSt" firstAttribute="centerX" secondItem="87v-3p-Tjq" secondAttribute="centerX" id="Y84-8e-cKf"/>
+                            <constraint firstItem="y94-os-ZVb" firstAttribute="leading" secondItem="Ixr-Zk-aMX" secondAttribute="leading" constant="116" id="ZdK-Ua-12j"/>
+                            <constraint firstItem="kXx-v4-LSt" firstAttribute="trailing" secondItem="Rhq-fS-n1E" secondAttribute="trailing" id="aIa-ID-dHs"/>
+                            <constraint firstItem="y94-os-ZVb" firstAttribute="top" secondItem="Ixr-Zk-aMX" secondAttribute="top" constant="36" id="bEV-dA-fne"/>
+                            <constraint firstItem="Ixr-Zk-aMX" firstAttribute="bottom" secondItem="Rhq-fS-n1E" secondAttribute="bottom" constant="189" id="k4V-Ck-dAl"/>
+                            <constraint firstItem="VAT-Kd-jjG" firstAttribute="top" secondItem="y94-os-ZVb" secondAttribute="bottom" constant="8" id="zgZ-n4-rdq"/>
+                            <constraint firstItem="VAT-Kd-jjG" firstAttribute="leading" secondItem="kXx-v4-LSt" secondAttribute="leading" id="zq2-Sb-FQb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fa4-bu-5Cf"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDk-4Y-9KK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="100" y="-1377"/>
         </scene>
@@ -211,112 +238,160 @@
         <!--SignInVC-->
         <scene sceneID="XWc-E7-bSZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vrp-DZ-Oe6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController title="SignInVC" id="7GD-sR-nG5" sceneMemberID="viewController">
+                <viewController title="SignInVC" id="7GD-sR-nG5" customClass="SignInVC" customModule="ProjectAIRBNB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xfx-KT-BAe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaC-p9-hvM">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaC-p9-hvM">
                                 <rect key="frame" x="49" y="709" width="294" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="RP5-wf-QSi"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="RQB-cw-ta5" kind="show" id="n2R-yK-npx"/>
+                                    <action selector="signInButtonPressed:" destination="7GD-sR-nG5" eventType="touchUpInside" id="HEw-Dt-1wp"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e89-ne-Guv">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e89-ne-Guv">
                                 <rect key="frame" x="67" y="608" width="258" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pass:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sz0-fj-gMq">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pass:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sz0-fj-gMq">
                                 <rect key="frame" x="67" y="667" width="258" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to AirBNB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5T4-qu-XiV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to AirBNB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5T4-qu-XiV">
                                 <rect key="frame" x="49" y="391" width="294" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="zf3-x4-QjQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="airbnb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="r1S-nU-EIS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="airbnb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="r1S-nU-EIS">
                                 <rect key="frame" x="116" y="291" width="160" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LGF-tk-U8p"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="sz0-fj-gMq" firstAttribute="centerX" secondItem="GaC-p9-hvM" secondAttribute="centerX" id="54U-k3-9Ox"/>
+                            <constraint firstItem="5T4-qu-XiV" firstAttribute="centerY" secondItem="Xfx-KT-BAe" secondAttribute="centerY" id="6tc-ZM-J5A"/>
+                            <constraint firstItem="5T4-qu-XiV" firstAttribute="trailing" secondItem="GaC-p9-hvM" secondAttribute="trailing" id="C4M-OV-Szv"/>
+                            <constraint firstItem="5T4-qu-XiV" firstAttribute="leading" secondItem="GaC-p9-hvM" secondAttribute="leading" id="GhM-6A-pse"/>
+                            <constraint firstItem="5T4-qu-XiV" firstAttribute="top" secondItem="r1S-nU-EIS" secondAttribute="bottom" constant="8" id="IXQ-VB-jGP"/>
+                            <constraint firstItem="r1S-nU-EIS" firstAttribute="centerX" secondItem="5T4-qu-XiV" secondAttribute="centerX" id="PQf-FB-e5j"/>
+                            <constraint firstItem="e89-ne-Guv" firstAttribute="leading" secondItem="sz0-fj-gMq" secondAttribute="leading" id="aE1-IZ-h68"/>
+                            <constraint firstItem="r1S-nU-EIS" firstAttribute="top" secondItem="LGF-tk-U8p" secondAttribute="top" constant="188" id="df7-fT-Xt2"/>
+                            <constraint firstItem="e89-ne-Guv" firstAttribute="trailing" secondItem="sz0-fj-gMq" secondAttribute="trailing" id="dzC-EM-tXx"/>
+                            <constraint firstItem="5T4-qu-XiV" firstAttribute="leading" secondItem="LGF-tk-U8p" secondAttribute="leading" constant="49" id="e2W-hi-wQF"/>
+                            <constraint firstItem="r1S-nU-EIS" firstAttribute="leading" secondItem="LGF-tk-U8p" secondAttribute="leading" constant="116" id="kqy-Ld-p9h"/>
+                            <constraint firstItem="LGF-tk-U8p" firstAttribute="bottom" secondItem="GaC-p9-hvM" secondAttribute="bottom" constant="63" id="lKg-d5-o56"/>
+                            <constraint firstItem="r1S-nU-EIS" firstAttribute="centerX" secondItem="Xfx-KT-BAe" secondAttribute="centerX" id="oai-Yk-OSl"/>
+                            <constraint firstItem="GaC-p9-hvM" firstAttribute="top" secondItem="sz0-fj-gMq" secondAttribute="bottom" constant="8" id="pFH-4Y-lGT"/>
+                            <constraint firstItem="sz0-fj-gMq" firstAttribute="top" secondItem="e89-ne-Guv" secondAttribute="bottom" constant="25" id="rh7-TN-gn6"/>
+                            <constraint firstItem="e89-ne-Guv" firstAttribute="leading" secondItem="LGF-tk-U8p" secondAttribute="leading" constant="67" id="ulm-R0-5m0"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f5U-wQ-ivG"/>
+                    <connections>
+                        <outlet property="emailText" destination="e89-ne-Guv" id="pgF-7a-Y2V"/>
+                        <outlet property="passText" destination="sz0-fj-gMq" id="HwE-I2-xmD"/>
+                        <segue destination="RQB-cw-ta5" kind="show" identifier="loginToHome" id="g8E-P5-4J1"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vrp-DZ-Oe6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-660.30534351145036" y="-598.59154929577471"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="6Po-qB-NaI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dZL-Dn-2aC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController title="RegisterVC" id="83z-f9-Azp" sceneMemberID="viewController">
+                <viewController title="RegisterVC" id="83z-f9-Azp" customClass="RegisterVC" customModule="ProjectAIRBNB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ESU-g5-gQf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to AirBNB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQJ-52-X1l">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to AirBNB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQJ-52-X1l">
                                 <rect key="frame" x="49" y="391" width="294" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="N6C-qt-EPN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMf-9m-erV">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMf-9m-erV">
                                 <rect key="frame" x="49" y="709" width="294" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="z9W-gU-5ai"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Register">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="RQB-cw-ta5" kind="show" id="dwA-fD-g2B"/>
+                                    <action selector="registerButton:" destination="83z-f9-Azp" eventType="touchUpInside" id="cbF-Qz-4kj"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qIq-Jk-IQF">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qIq-Jk-IQF">
                                 <rect key="frame" x="67" y="608" width="258" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pass:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N1m-wa-5rX">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pass:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N1m-wa-5rX">
                                 <rect key="frame" x="67" y="667" width="258" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="airbnb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="tKW-jg-cwe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="airbnb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="tKW-jg-cwe">
                                 <rect key="frame" x="116" y="291" width="160" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kBl-WB-pvp"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="qIq-Jk-IQF" firstAttribute="leading" secondItem="kBl-WB-pvp" secondAttribute="leading" constant="67" id="1di-TQ-YhM"/>
+                            <constraint firstItem="qIq-Jk-IQF" firstAttribute="leading" secondItem="N1m-wa-5rX" secondAttribute="leading" id="H4Q-bw-3or"/>
+                            <constraint firstItem="sQJ-52-X1l" firstAttribute="leading" secondItem="kBl-WB-pvp" secondAttribute="leading" constant="49" id="I6d-bi-QPt"/>
+                            <constraint firstItem="tKW-jg-cwe" firstAttribute="leading" secondItem="kBl-WB-pvp" secondAttribute="leading" constant="116" id="QtG-eq-wLX"/>
+                            <constraint firstItem="sQJ-52-X1l" firstAttribute="trailing" secondItem="eMf-9m-erV" secondAttribute="trailing" id="UV7-hK-Z0s"/>
+                            <constraint firstItem="tKW-jg-cwe" firstAttribute="centerX" secondItem="sQJ-52-X1l" secondAttribute="centerX" id="Y3T-oU-3e1"/>
+                            <constraint firstItem="kBl-WB-pvp" firstAttribute="bottom" secondItem="eMf-9m-erV" secondAttribute="bottom" constant="63" id="ZAc-x1-9UZ"/>
+                            <constraint firstItem="tKW-jg-cwe" firstAttribute="centerX" secondItem="ESU-g5-gQf" secondAttribute="centerX" id="cNr-2P-f3I"/>
+                            <constraint firstItem="qIq-Jk-IQF" firstAttribute="trailing" secondItem="N1m-wa-5rX" secondAttribute="trailing" id="dXJ-1c-4cO"/>
+                            <constraint firstItem="sQJ-52-X1l" firstAttribute="top" secondItem="tKW-jg-cwe" secondAttribute="bottom" constant="8" id="h6i-qQ-Vr6"/>
+                            <constraint firstItem="sQJ-52-X1l" firstAttribute="centerY" secondItem="ESU-g5-gQf" secondAttribute="centerY" id="mew-VL-h5Q"/>
+                            <constraint firstItem="tKW-jg-cwe" firstAttribute="top" secondItem="kBl-WB-pvp" secondAttribute="top" constant="188" id="n1G-WM-HMA"/>
+                            <constraint firstItem="sQJ-52-X1l" firstAttribute="leading" secondItem="eMf-9m-erV" secondAttribute="leading" id="sQy-B3-p28"/>
+                            <constraint firstItem="N1m-wa-5rX" firstAttribute="centerX" secondItem="eMf-9m-erV" secondAttribute="centerX" id="va4-pA-FTa"/>
+                            <constraint firstItem="N1m-wa-5rX" firstAttribute="top" secondItem="qIq-Jk-IQF" secondAttribute="bottom" constant="25" id="ww2-63-ajP"/>
+                            <constraint firstItem="eMf-9m-erV" firstAttribute="top" secondItem="N1m-wa-5rX" secondAttribute="bottom" constant="8" id="ywt-jj-a69"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TP8-CQ-UY9"/>
+                    <connections>
+                        <outlet property="emailText" destination="qIq-Jk-IQF" id="ldY-WN-dAe"/>
+                        <outlet property="passText" destination="N1m-wa-5rX" id="xZD-uy-IMr"/>
+                        <segue destination="RQB-cw-ta5" kind="show" identifier="home" id="KGT-Ri-miR"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZL-Dn-2aC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="952" y="-599"/>
         </scene>
@@ -327,7 +402,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="dwA-fD-g2B"/>
+        <segue reference="g8E-P5-4J1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="airbnb-icon" width="72" height="72"/>

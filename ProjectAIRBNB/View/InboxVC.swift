@@ -15,7 +15,7 @@ class InboxVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        welcomeLabel.text = "You have new messages"
+        welcomeLabel.text = "You have no new messages"
         
     }
     

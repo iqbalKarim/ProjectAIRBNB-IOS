@@ -32,9 +32,8 @@ extension TripsVC: UICollectionViewDataSource, UICollectionViewDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let controller = segue.destination as! DetailVC
-        controller.mRecord = selectedPlace
+        controller.mRecord = selectedPlace 
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
         if (collectionView === mCollectionViewApartment){
@@ -60,7 +59,6 @@ extension TripsVC: UICollectionViewDataSource, UICollectionViewDelegate {
         }
     }
     
-    // For each cell setting the data
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (collectionView === mCollectionViewHouse){
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "houseCell", for: indexPath) as! HouseCVC

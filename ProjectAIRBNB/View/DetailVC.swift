@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import CoreData
+
+
 
 class DetailVC: UIViewController {
 
@@ -16,6 +19,11 @@ class DetailVC: UIViewController {
     @IBOutlet weak var mimage: UIImageView!
     @IBOutlet weak var mCategory: UILabel!
     @IBOutlet weak var mLocation: UILabel!
+    
+    let savedView = SavedVC()
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,15 +36,20 @@ class DetailVC: UIViewController {
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func longPressGesture(_ sender: Any) {
+        let longPressAlert = UIAlertController(title: "Long press", message: "You just long pressed", preferredStyle: UIAlertController.Style.alert)
+        longPressAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
+        self.present(longPressAlert, animated: true, completion: nil)
+        saveSuccess(place: mRecord)
     }
-    */
-
+    
+    func saveSuccess(place: Record) {
+        _ = PlaceCore.createInManagedObjectContext(context, name: place.name, location: place.location, category: place.category, img: place.image, desc: place.description)
+        do {
+            try context.save()
+        } catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }
+    
 }

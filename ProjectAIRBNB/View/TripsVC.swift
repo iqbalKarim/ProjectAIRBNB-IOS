@@ -11,6 +11,7 @@ import CLTypingLabel
 class TripsVC: UIViewController {
     let mDataSource = DataSource()
     
+    var selectedPlace : Record = Record()
     @IBOutlet weak var mBungalowsLabel: CLTypingLabel!
     @IBOutlet weak var mApartmentsLabel: CLTypingLabel!
     @IBOutlet weak var mHousesLabel: CLTypingLabel!
@@ -29,6 +30,25 @@ class TripsVC: UIViewController {
 
 extension TripsVC: UICollectionViewDataSource, UICollectionViewDelegate {
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! DetailVC
+        controller.mRecord = selectedPlace
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        if (collectionView === mCollectionViewApartment){
+            selectedPlace = (mDataSource.itemsInCategory(index: 1)[indexPath.row])
+            performSegue(withIdentifier: "detailSegue", sender: self)
+        } else if (collectionView === mCollectionViewHouse){
+            selectedPlace = (mDataSource.itemsInCategory(index: 0)[indexPath.row])
+            performSegue(withIdentifier: "detailSegue", sender: self)
+        } else {
+            selectedPlace = (mDataSource.itemsInCategory(index: 2)[indexPath.row])
+            performSegue(withIdentifier: "detailSegue", sender: self)
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if (collectionView === mCollectionViewHouse){
@@ -43,7 +63,7 @@ extension TripsVC: UICollectionViewDataSource, UICollectionViewDelegate {
     // For each cell setting the data
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (collectionView === mCollectionViewHouse){
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "houseCell", for: indexPath) as! TripsListCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "houseCell", for: indexPath) as! HouseCVC
             let places: [Record] = mDataSource.itemsInCategory(index: 0)
             let place = places[indexPath.row]
             

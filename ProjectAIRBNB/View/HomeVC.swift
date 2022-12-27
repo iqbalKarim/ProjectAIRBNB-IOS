@@ -51,7 +51,7 @@ class HomeVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "searchTableCell", for: indexPath) as! SearchTVC
         
         let place: Record
         
@@ -63,8 +63,10 @@ class HomeVC: UITableViewController {
             place = places[indexPath.row]
         }
         
-        cell.textLabel!.text = place.name
-        cell.detailTextLabel!.text = place.category
+        cell.nameView!.text = place.name
+        cell.categoryView!.text = place.category
+        cell.mImageView!.image = UIImage(named: place.image)
+        cell.locationView!.text = place.location
         return cell
     }
     
@@ -75,6 +77,27 @@ class HomeVC: UITableViewController {
         })
         
         self.tableView.reloadData()
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "showDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let place : Record
+                
+                if mSearchController.isActive && mSearchController.searchBar.text != "" {
+                    place = filteredPlaces[indexPath.row]
+                }
+                else {
+                    place = places[indexPath.row]
+                }
+                
+                let controller = segue.destination as! DetailVC
+                controller.mRecord = place
+            }
+        }
     }
     
 }

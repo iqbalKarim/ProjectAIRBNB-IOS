@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TripsListCollectionViewCell: UICollectionViewCell {
+class HouseCVC: UICollectionViewCell {
     
     @IBOutlet weak var nameView: UILabel!
     @IBOutlet weak var imageView: UIImageView!

@@ -13,10 +13,12 @@
 		AB020715295A069E00F5D2A5 /* PlaceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB020714295A069E00F5D2A5 /* PlaceRecord.swift */; };
 		AB020717295A072B00F5D2A5 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB020716295A072B00F5D2A5 /* DataSource.swift */; };
 		AB020719295A088100F5D2A5 /* TripsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB020718295A088100F5D2A5 /* TripsVC.swift */; };
-		AB02071C295A247500F5D2A5 /* TripsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB02071B295A247500F5D2A5 /* TripsListCollectionViewCell.swift */; };
+		AB02071C295A247500F5D2A5 /* HouseCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB02071B295A247500F5D2A5 /* HouseCVC.swift */; };
 		AB0F4F46295A3D3D001DD9EB /* ApartmentsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F4F45295A3D3D001DD9EB /* ApartmentsCVC.swift */; };
 		AB0F4F48295A4791001DD9EB /* BungalowsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F4F47295A4791001DD9EB /* BungalowsCVC.swift */; };
 		AB0F4F4A295A70EF001DD9EB /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F4F49295A70EF001DD9EB /* SavedVC.swift */; };
+		AB0F4F4D295A726D001DD9EB /* SearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F4F4C295A726D001DD9EB /* SearchTVC.swift */; };
+		AB0F4F4F295A777E001DD9EB /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F4F4E295A777E001DD9EB /* DetailVC.swift */; };
 		AB8F895E2952F0B70079E6C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F895D2952F0B70079E6C8 /* AppDelegate.swift */; };
 		AB8F89602952F0B70079E6C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F895F2952F0B70079E6C8 /* SceneDelegate.swift */; };
 		AB8F89622952F0B70079E6C8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F89612952F0B70079E6C8 /* HomeVC.swift */; };
@@ -39,10 +41,12 @@
 		AB020714295A069E00F5D2A5 /* PlaceRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRecord.swift; sourceTree = "<group>"; };
 		AB020716295A072B00F5D2A5 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		AB020718295A088100F5D2A5 /* TripsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsVC.swift; sourceTree = "<group>"; };
-		AB02071B295A247500F5D2A5 /* TripsListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB02071B295A247500F5D2A5 /* HouseCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCVC.swift; sourceTree = "<group>"; };
 		AB0F4F45295A3D3D001DD9EB /* ApartmentsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentsCVC.swift; sourceTree = "<group>"; };
 		AB0F4F47295A4791001DD9EB /* BungalowsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BungalowsCVC.swift; sourceTree = "<group>"; };
 		AB0F4F49295A70EF001DD9EB /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
+		AB0F4F4C295A726D001DD9EB /* SearchTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTVC.swift; sourceTree = "<group>"; };
+		AB0F4F4E295A777E001DD9EB /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		AB8F895A2952F0B70079E6C8 /* ProjectAIRBNB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAIRBNB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8F895D2952F0B70079E6C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB8F895F2952F0B70079E6C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,11 +98,19 @@
 		AB02071A295A244800F5D2A5 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
-				AB02071B295A247500F5D2A5 /* TripsListCollectionViewCell.swift */,
+				AB02071B295A247500F5D2A5 /* HouseCVC.swift */,
 				AB0F4F45295A3D3D001DD9EB /* ApartmentsCVC.swift */,
 				AB0F4F47295A4791001DD9EB /* BungalowsCVC.swift */,
 			);
 			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		AB0F4F4B295A724D001DD9EB /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				AB0F4F4C295A726D001DD9EB /* SearchTVC.swift */,
+			);
+			path = TableViews;
 			sourceTree = "<group>";
 		};
 		AB8F89512952F0B70079E6C8 = {
@@ -122,6 +134,7 @@
 		AB8F895C2952F0B70079E6C8 /* ProjectAIRBNB */ = {
 			isa = PBXGroup;
 			children = (
+				AB0F4F4B295A724D001DD9EB /* TableViews */,
 				AB02071A295A244800F5D2A5 /* CollectionViews */,
 				AB020713295A068500F5D2A5 /* Json */,
 				AB8F895D2952F0B70079E6C8 /* AppDelegate.swift */,
@@ -148,6 +161,7 @@
 				AB02070D2959F8FF00F5D2A5 /* SignInVC.swift */,
 				AB020718295A088100F5D2A5 /* TripsVC.swift */,
 				AB0F4F49295A70EF001DD9EB /* SavedVC.swift */,
+				AB0F4F4E295A777E001DD9EB /* DetailVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,17 +291,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0F4F4D295A726D001DD9EB /* SearchTVC.swift in Sources */,
 				AC0448262954D8F40046FCB9 /* InboxVC.swift in Sources */,
 				AB8F89622952F0B70079E6C8 /* HomeVC.swift in Sources */,
 				AB02070E2959F8FF00F5D2A5 /* SignInVC.swift in Sources */,
 				AB8F895E2952F0B70079E6C8 /* AppDelegate.swift in Sources */,
+				AB0F4F4F295A777E001DD9EB /* DetailVC.swift in Sources */,
 				AB0F4F4A295A70EF001DD9EB /* SavedVC.swift in Sources */,
 				AC04482A2955B1EB0046FCB9 /* RegisterVC.swift in Sources */,
 				AB020715295A069E00F5D2A5 /* PlaceRecord.swift in Sources */,
 				AC04482C2955C0E40046FCB9 /* SignInVC.swift in Sources */,
 				AB0F4F46295A3D3D001DD9EB /* ApartmentsCVC.swift in Sources */,
 				AB0F4F48295A4791001DD9EB /* BungalowsCVC.swift in Sources */,
-				AB02071C295A247500F5D2A5 /* TripsListCollectionViewCell.swift in Sources */,
+				AB02071C295A247500F5D2A5 /* HouseCVC.swift in Sources */,
 				AB020719295A088100F5D2A5 /* TripsVC.swift in Sources */,
 				AB020712295A065400F5D2A5 /* SwiftyJSON.swift in Sources */,
 				AB8F89602952F0B70079E6C8 /* SceneDelegate.swift in Sources */,

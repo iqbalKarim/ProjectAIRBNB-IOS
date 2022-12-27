@@ -73,4 +73,8 @@ class DataSource {
         }
         return filteredItems
     }
+    
+    func getAllItems() -> [Record] {
+        return mRecordList
     }
+}

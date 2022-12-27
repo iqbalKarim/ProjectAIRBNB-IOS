@@ -16,6 +16,7 @@
 		AB02071C295A247500F5D2A5 /* TripsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB02071B295A247500F5D2A5 /* TripsListCollectionViewCell.swift */; };
 		AB0F4F46295A3D3D001DD9EB /* ApartmentsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F4F45295A3D3D001DD9EB /* ApartmentsCVC.swift */; };
 		AB0F4F48295A4791001DD9EB /* BungalowsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F4F47295A4791001DD9EB /* BungalowsCVC.swift */; };
+		AB0F4F4A295A70EF001DD9EB /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F4F49295A70EF001DD9EB /* SavedVC.swift */; };
 		AB8F895E2952F0B70079E6C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F895D2952F0B70079E6C8 /* AppDelegate.swift */; };
 		AB8F89602952F0B70079E6C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F895F2952F0B70079E6C8 /* SceneDelegate.swift */; };
 		AB8F89622952F0B70079E6C8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F89612952F0B70079E6C8 /* HomeVC.swift */; };
@@ -41,6 +42,7 @@
 		AB02071B295A247500F5D2A5 /* TripsListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB0F4F45295A3D3D001DD9EB /* ApartmentsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentsCVC.swift; sourceTree = "<group>"; };
 		AB0F4F47295A4791001DD9EB /* BungalowsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BungalowsCVC.swift; sourceTree = "<group>"; };
+		AB0F4F49295A70EF001DD9EB /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
 		AB8F895A2952F0B70079E6C8 /* ProjectAIRBNB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAIRBNB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8F895D2952F0B70079E6C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB8F895F2952F0B70079E6C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				AC04482B2955C0E40046FCB9 /* SignInVC.swift */,
 				AB02070D2959F8FF00F5D2A5 /* SignInVC.swift */,
 				AB020718295A088100F5D2A5 /* TripsVC.swift */,
+				AB0F4F49295A70EF001DD9EB /* SavedVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				AB8F89622952F0B70079E6C8 /* HomeVC.swift in Sources */,
 				AB02070E2959F8FF00F5D2A5 /* SignInVC.swift in Sources */,
 				AB8F895E2952F0B70079E6C8 /* AppDelegate.swift in Sources */,
+				AB0F4F4A295A70EF001DD9EB /* SavedVC.swift in Sources */,
 				AC04482A2955B1EB0046FCB9 /* RegisterVC.swift in Sources */,
 				AB020715295A069E00F5D2A5 /* PlaceRecord.swift in Sources */,
 				AC04482C2955C0E40046FCB9 /* SignInVC.swift in Sources */,

@@ -37,7 +37,7 @@ class DetailVC: UIViewController {
     }
     
     @IBAction func longPressGesture(_ sender: Any) {
-        let longPressAlert = UIAlertController(title: "Long press", message: "You just long pressed", preferredStyle: UIAlertController.Style.alert)
+        let longPressAlert = UIAlertController(title: "Saved", message: "The place has been saved to your favourites.", preferredStyle: UIAlertController.Style.alert)
         longPressAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
         self.present(longPressAlert, animated: true, completion: nil)
         saveSuccess(place: mRecord)

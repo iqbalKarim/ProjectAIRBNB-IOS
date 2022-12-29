@@ -35,6 +35,7 @@ class SavedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func reloadData(){
+        print("hello")
         fetchData()
         savedPlacesTable.reloadData()
     }

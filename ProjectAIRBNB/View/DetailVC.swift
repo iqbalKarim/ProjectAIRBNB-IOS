@@ -7,11 +7,12 @@
 
 import UIKit
 import CoreData
-
+import AVFoundation
 
 
 class DetailVC: UIViewController {
 
+    var player: AVAudioPlayer!
     var mRecord = Record()
     @IBOutlet weak var mName: UILabel!
     
@@ -40,6 +41,7 @@ class DetailVC: UIViewController {
         let longPressAlert = UIAlertController(title: "Saved", message: "The place has been saved to your favourites.", preferredStyle: UIAlertController.Style.alert)
         longPressAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
         self.present(longPressAlert, animated: true, completion: nil)
+        playSound(soundName: "A")
         saveSuccess(place: mRecord)
     }
     
@@ -51,5 +53,12 @@ class DetailVC: UIViewController {
             print("Could not save \(error), \(error.userInfo)")
         }
     }
+    
+    func playSound(soundName: String){
+        let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+    }
+    
     
 }

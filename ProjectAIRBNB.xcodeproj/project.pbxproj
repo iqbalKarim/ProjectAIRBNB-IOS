@@ -21,6 +21,7 @@
 		AB0F4F4F295A777E001DD9EB /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F4F4E295A777E001DD9EB /* DetailVC.swift */; };
 		AB0F4F5A295A88F0001DD9EB /* PlaceCore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F4F58295A88F0001DD9EB /* PlaceCore+CoreDataProperties.swift */; };
 		AB0F4F5B295A88F0001DD9EB /* PlaceCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F4F59295A88F0001DD9EB /* PlaceCore.swift */; };
+		AB6F292E295EFD48007A7CC8 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB6F292D295EFD48007A7CC8 /* A.wav */; };
 		AB8F895E2952F0B70079E6C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F895D2952F0B70079E6C8 /* AppDelegate.swift */; };
 		AB8F89602952F0B70079E6C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F895F2952F0B70079E6C8 /* SceneDelegate.swift */; };
 		AB8F89622952F0B70079E6C8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F89612952F0B70079E6C8 /* HomeVC.swift */; };
@@ -51,6 +52,7 @@
 		AB0F4F4E295A777E001DD9EB /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		AB0F4F58295A88F0001DD9EB /* PlaceCore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaceCore+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AB0F4F59295A88F0001DD9EB /* PlaceCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCore.swift; sourceTree = "<group>"; };
+		AB6F292D295EFD48007A7CC8 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
 		AB8F895A2952F0B70079E6C8 /* ProjectAIRBNB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAIRBNB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8F895D2952F0B70079E6C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB8F895F2952F0B70079E6C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			path = TableViews;
 			sourceTree = "<group>";
 		};
+		AB6F292C295EFD39007A7CC8 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				AB6F292D295EFD48007A7CC8 /* A.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		AB8F89512952F0B70079E6C8 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		AB8F895C2952F0B70079E6C8 /* ProjectAIRBNB */ = {
 			isa = PBXGroup;
 			children = (
+				AB6F292C295EFD39007A7CC8 /* Sound */,
 				AB0F4F4B295A724D001DD9EB /* TableViews */,
 				AB02071A295A244800F5D2A5 /* CollectionViews */,
 				AB020713295A068500F5D2A5 /* Json */,
@@ -240,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB6F292E295EFD48007A7CC8 /* A.wav in Resources */,
 				AB8F896D2952F0B80079E6C8 /* LaunchScreen.storyboard in Resources */,
 				AB020710295A05C400F5D2A5 /* houses.json in Resources */,
 				AC0448282954E1040046FCB9 /* GoogleService-Info.plist in Resources */,
